@@ -5,12 +5,6 @@ import Post, { PostProps } from "../components/Post"
 // Импортируем посты и пользователей из базыДанных
 import prisma from '../lib/prisma';
 
-const user = prisma.user.create({
-  data: {
-    email: 'elsa@prisma.io',
-    name: 'Elsa Prisma',
-  },
-})
 
 
 export const getStaticProps: GetStaticProps = async () => {
